@@ -1,11 +1,13 @@
-import Link from "next/link";
 import { IDefaultLayout } from "./types";
-import * as styled from "./style";
+import * as styled from "./styles";
 import { Header } from "@/components/molecules";
 
 export const DefaultLayout = ({ children }: IDefaultLayout) => (
   <>
     <Header />
-    <styled.Main>{children}</styled.Main>
+    <styled.Section>
+      <main></main>
+      <styled.Aside>{children}</styled.Aside>
+    </styled.Section>
   </>
 );

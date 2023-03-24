@@ -1,5 +1,6 @@
 import { Card } from "@/components/molecules";
 import { DefaultLayout } from "@/components/templates";
+import * as styled from "./styles";
 
 const data = [
   {
@@ -25,10 +26,10 @@ const data = [
 
 export const HomePage = () => (
   <DefaultLayout>
-    <section>hello</section>
-
-    {data.map((post) => (
-      <Card key={post.id} post={post} />
-    ))}
+    <styled.Section>
+      {data.map((post) => (
+        <Card key={post.id} post={post} />
+      ))}
+    </styled.Section>
   </DefaultLayout>
 );
