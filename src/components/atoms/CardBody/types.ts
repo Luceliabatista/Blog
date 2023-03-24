@@ -1,4 +1,3 @@
-export interface IText {
+export interface ICardBody {
   children: React.ReactNode;
-
 }

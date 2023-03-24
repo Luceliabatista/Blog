@@ -1,3 +1,6 @@
 import { ICardTitle } from "./types";
+import * as styled from "./styles";
 
-export const CardTitle = ({ children }: ICardTitle) => <h2>{children}</h2>;
+export const CardTitle = ({ children }: ICardTitle) =>
+    <styled.Title>{children}</styled.Title>;
+
