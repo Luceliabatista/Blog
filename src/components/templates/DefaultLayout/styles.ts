@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 0px;
 
   main {
     max-width: calc(100vw - 350px);
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
   }
 `;
 
@@ -14,5 +15,4 @@ export const Aside = styled.aside`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
 `;

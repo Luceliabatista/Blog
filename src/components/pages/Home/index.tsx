@@ -11,7 +11,6 @@ export const HomePage = () => {
 
   useEffect(() => {
     const postId = router.query?.id as string;
-    console.log({ postId });
 
     if (postId) {
       PostsServices.getById(postId).then((response: any) =>

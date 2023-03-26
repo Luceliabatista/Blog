@@ -2,9 +2,10 @@ import styled from "styled-components";
 import NextImage from "next/image";
 
 export const Header = styled.header`
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 1fr;
   padding: 10px 40px;
-  gap: 150px;
+  gap: 10px;
   background-color: #00142d;
 `;
 
@@ -29,6 +30,7 @@ export const Search = styled.input`
   border-radius: 10px;
   border: 1px solid;
   outline: none;
+  margin-left: auto;
 `;
 
 export const Login = styled.button`
@@ -40,5 +42,4 @@ export const Login = styled.button`
   border: none;
   outline: none;
 `;
-export const Main = styled.main`
-`;
+export const Main = styled.main``;
