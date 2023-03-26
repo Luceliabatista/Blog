@@ -7,4 +7,7 @@ export const Section = styled.section`
   align-items: center;
   gap: 20px;
   padding: 20px 0px;
+
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
 `;

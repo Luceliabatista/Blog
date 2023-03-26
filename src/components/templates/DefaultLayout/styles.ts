@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section = styled.div`
   display: grid;
   grid-template-columns: 1fr 300px;
+  align-items: flex-start;
   gap: 0px;
 
   main {

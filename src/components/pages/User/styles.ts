@@ -10,7 +10,7 @@ export const Card = styled.div`
   border-radius: 10px;
   margin-bottom: 20px;
 
-  div {
+  > div {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -21,8 +21,6 @@ export const Card = styled.div`
   }
 `;
 
-export const PostCommentName = styled.p``;
-
-export const PostCommentEmail = styled.p``;
-
-export const PostCommentBody = styled.p``;
+export const Details = styled.div`
+  font-size: 14px;
+`;

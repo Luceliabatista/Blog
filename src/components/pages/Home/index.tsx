@@ -10,18 +10,17 @@ export const HomePage = () => {
   const [data, setData] = useState<IPost>({} as IPost);
 
   useEffect(() => {
-    const postId = router.query?.id as string;
-
-    if (postId) {
-      PostsServices.getById(postId).then((response: any) =>
-        setData(response?.data || [])
+    const postId = router.query?.id || "1";
+     if (postId) {
+      PostsServices.getById(postId as string).then((response: any) =>
+        setData(response?.data || {})
       );
     }
   }, [router]);
 
   return (
     <DefaultLayout>
-      {router.query?.id && (
+      {data?.id && (
         <styled.Container>
           <styled.Card>
             <styled.Title>{data.title}</styled.Title>

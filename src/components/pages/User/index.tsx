@@ -15,7 +15,7 @@ export const UserPage = () => {
 
     if (userId) {
       UsersServices.getById(userId).then((response: any) =>
-        setData(response?.data || [])
+        setData(response?.data || {})
       );
     }
   }, [router]);
@@ -27,7 +27,33 @@ export const UserPage = () => {
           <styled.Card>
             <div>
               <img src="/user.png" alt="Imagem do User" />
-              <h1> Detalhes </h1>
+              <styled.Details>
+                <p>
+                  <b>Nome: </b>
+                  {data.name}
+                </p>
+                <p>
+                  <b>Email: </b>
+                  {data.email}
+                </p>
+                <p>
+                  <b>Username: </b>
+                  {data.username}
+                </p>
+                <p>
+                  <b>Celular: </b>
+                  {data.phone}
+                </p>
+                <p>
+                  <b>Site: </b>
+                  <a href={`https://${data.website}`}>{data.website}</a>
+                </p>
+                <p>
+                  <b>Endereço: </b>
+                  {data.address?.street}, {data.address?.suite},{" "}
+                  {data.address?.city}, {data.address?.zipcode}
+                </p>
+              </styled.Details>
             </div>
           </styled.Card>
 
