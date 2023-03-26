@@ -2,10 +2,10 @@ import { Card } from "@/components/molecules";
 import * as styled from "./styles";
 import { PostsServices } from "@/services/api/PostsServices";
 import { useEffect, useState } from "react";
-import { IDetalhePost } from "@/services/api/types";
+import { IPost } from "@/types/post";
 
 export const Posts = () => {
-  const [data, setData] = useState<IDetalhePost[]>([]);
+  const [data, setData] = useState<IPost[]>([]);
 
   useEffect(() => {
     PostsServices.getAll().then((response: any) =>

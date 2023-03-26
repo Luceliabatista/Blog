@@ -1,10 +1,5 @@
-export interface IDetalhePost {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+import { IPost } from "@/types/post";
 
 export interface TPostsComTotalCount {
-  data: IDetalhePost[];
+  data: IPost[];
 }
