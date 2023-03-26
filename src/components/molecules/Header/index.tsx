@@ -4,7 +4,7 @@ import * as styled from "./styles";
 export const Header = () => (
   <styled.Header>
     <Link href="/">
-      <styled.Image src="/logo2.png" alt="Logo" width={60} height={60} />
+      <styled.Image src="/logo.png" alt="Logo" width={60} height={70} />
     </Link>
     <styled.Menu>
       <Link href="/">Home</Link>

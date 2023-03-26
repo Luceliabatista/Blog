@@ -25,8 +25,8 @@ export const HomePage = () => {
           <styled.Card>
             <styled.Title>{data.title}</styled.Title>
             <div>
-              <img src="/logo.png" alt="Imagem do post" />
-              <styled.Body>{data.body}</styled.Body>
+              <img src="/post.png" alt="Imagem do post" />
+              <p>{data.body}</p>
             </div>
           </styled.Card>
 
@@ -34,17 +34,17 @@ export const HomePage = () => {
           {data.comments?.map((comment) => (
             <>
               <styled.PostCard>
-                <styled.PostCommentName key={comment.id}>
+                <p key={comment.id}>
                   <b>Nome: </b>
                   {comment.name}
-                </styled.PostCommentName>
-                <styled.PostCommentEmail key={comment.id}>
+                </p>
+                <p key={comment.id}>
                   <b>Email: </b>
                   {comment.email}
-                </styled.PostCommentEmail>
-                <styled.PostCommentBody key={comment.id}>
+                </p>
+                <p key={comment.id}>
                   {comment.body}
-                </styled.PostCommentBody>
+                </p>
               </styled.PostCard>
             </>
           ))}

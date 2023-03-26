@@ -6,7 +6,10 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   margin-bottom: 20px;
- 
+  background: #fbf9f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 
   div {
     display: flex;
@@ -26,7 +29,7 @@ export const Card = styled.div`
     margin-bottom: 20px;
 
     div {
-     flex-direction: row;
+      flex-direction: row;
 
       img {
         max-height: 150px;
@@ -38,7 +41,6 @@ export const Title = styled.h1`
   margin: 0 0 20px 0;
 `;
 
-export const Body = styled.p``;
 
 export const PostCard = styled.div`
   font-size: 14px;
@@ -52,8 +54,3 @@ export const PostCard = styled.div`
   }
 `;
 
-export const PostCommentName = styled.p``;
-
-export const PostCommentEmail = styled.p``;
-
-export const PostCommentBody = styled.p``;
