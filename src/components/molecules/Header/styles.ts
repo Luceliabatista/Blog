@@ -3,10 +3,15 @@ import NextImage from "next/image";
 
 export const Header = styled.header`
   display: grid;
-  grid-template-columns: 150px 1fr;
-  padding: 10px 40px;
-  gap: 10px;
+  grid-template-columns: 50px 1fr;
+  padding: 10px 20px;
+  gap: 30px;
   background-color: #00142d;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 100px 1fr;
+    padding: 10px 40px;
+  }
 `;
 
 export const Image = styled(NextImage)`
@@ -17,9 +22,13 @@ export const Menu = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   font-size: 20px;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
 `;
 
 export const Search = styled.input`
@@ -31,6 +40,11 @@ export const Search = styled.input`
   border: 1px solid;
   outline: none;
   margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;
 
 export const Login = styled.button`
@@ -41,5 +55,9 @@ export const Login = styled.button`
   font-size: 20px;
   border: none;
   outline: none;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;
-export const Main = styled.main``;

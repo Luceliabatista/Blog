@@ -14,9 +14,14 @@ export const Card = styled.div`
     display: flex;
     gap: 30px;
     align-items: center;
+    flex-direction: column;
 
     img {
       max-height: 150px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
   }
 `;
