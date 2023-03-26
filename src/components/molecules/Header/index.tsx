@@ -9,8 +9,8 @@ export const Header = () => (
     <styled.Menu>
       <Link href="/">Home</Link>
       <Link href="/usuarios">Usuários</Link>
-      <styled.Search type="search" placeholder="Pesquisar" />
-      <styled.Login> | LOGIN</styled.Login>
+      {/* <styled.Search type="search" placeholder="Pesquisar" />
+      <styled.Login> | LOGIN</styled.Login> */}
     </styled.Menu>
   </styled.Header>
 );

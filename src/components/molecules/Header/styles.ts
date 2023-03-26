@@ -21,43 +21,13 @@ export const Image = styled(NextImage)`
 export const Menu = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 30px;
   gap: 30px;
   font-size: 20px;
   color: #ffffff;
 
   @media screen and (min-width: 768px) {
     gap: 40px;
-  }
-`;
-
-export const Search = styled.input`
-  max-height: 40px;
-  max-width: 200px;
-  padding: 5px 15px;
-  font-size: 20px;
-  border-radius: 10px;
-  border: 1px solid;
-  outline: none;
-  margin-left: auto;
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-`;
-
-export const Login = styled.button`
-  max-width: 100px;
-  max-height: 50px;
-  background: transparent;
-  color: #ff7500;
-  font-size: 20px;
-  border: none;
-  outline: none;
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
   }
 `;

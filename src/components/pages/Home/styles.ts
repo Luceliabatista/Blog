@@ -5,18 +5,32 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-  padding: 30px;
-  background: #fbf9f9;
-  border-radius: 10px;
   margin-bottom: 20px;
+ 
 
   div {
     display: flex;
     gap: 30px;
     align-items: center;
+    flex-direction: column;
+  }
+  img {
+    max-height: 150px;
+    margin: 0 auto;
+  }
 
-    img {
-      max-height: 150px;
+  @media screen and (min-width: 800px) {
+    padding: 30px;
+    background: #fbf9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    div {
+     flex-direction: row;
+
+      img {
+        max-height: 150px;
+      }
     }
   }
 `;
